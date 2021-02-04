@@ -1,13 +1,11 @@
 version = 1
 
+exclude_patterns = ["demo/**"]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  environment = [
-    "jest",
-    "browser"
-  ]
   plugins = ["vue"]
-  style_guide = "standard"
+  environment = ["browser"]
